@@ -255,7 +255,7 @@ void loop() {
         x_times_down=0;
         
         // zamknięcie gdy ciemno
-        }else if((currentHour*60 + currentMinute)>=(Sunset+Sunset+SunsetHourOffset*60+SunsetMinuteOffset) && x_times_down<5){
+        }else if((currentHour*60 + currentMinute)>=(Sunset+SunsetHourOffset*60+SunsetMinuteOffset) && x_times_down<5){
           Serial.print("DOWN \n");
           delay(2000);
           digitalWrite(D1,LOW);
